@@ -1,0 +1,25 @@
+.footer{
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.not-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+.alice-carousel__dots{
+    display: none;
+}
+
+.interna-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}

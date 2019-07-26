@@ -1,0 +1,145 @@
+@keyframes buttonOffer {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 40px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes buttonOfferRight {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 20px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes floatTextLeft {
+  0% {
+    margin-top: 120px; }
+  50% {
+    margin-top: 110px; }
+  100% {
+    margin-top: 120px; } }
+
+@keyframes middleTextLeft {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 40px; } }
+
+@keyframes buttonRadiusBorder {
+  from {
+    border-radius: 5px; }
+  to {
+    border-radius: 20px; } }
+
+@keyframes reaveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes reavealItem {
+  from {
+    position: absolute;
+    left: -200px; }
+  to {
+    left: 0px;
+    position: relative; } }
+
+@keyframes shadowBlink {
+  0% {
+    box-shadow: 1px 1px 15px 1px #989898; }
+  50% {
+    box-shadow: none; }
+  100% {
+    box-shadow: 1px 1px 15px 1px #989898; } }
+
+@keyframes rightAndLeft {
+  0% {
+    right: 10px; }
+  50% {
+    right: 15px; }
+  100% {
+    right: 10px; } }
+
+@keyframes showItemStore {
+  0% {
+    opacity: 0;
+    width: 100%; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1;
+    width: 260px; } }
+
+@keyframes showMobileMenu {
+  0% {
+    height: 0; }
+  100% {
+    height: 100vh; } }
+
+.item-store {
+  width: 260px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  position: relative;
+  animation: showItemStore 0.5s; }
+  @media (max-width: 600px) {
+    .item-store {
+      width: calc(50% - 20px);
+      animation: none; } }
+  .item-store:hover {
+    box-shadow: 1px 1px 20px 0px #d0d0d0; }
+    .item-store:hover .item-store-button {
+      opacity: 1; }
+  .item-store .item-store-photo {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 280px; }
+    @media (max-width: 600px) {
+      .item-store .item-store-photo {
+        height: 175px; } }
+  .item-store .item-store-marca {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 0px 10px;
+    margin-top: 10px; }
+  .item-store .item-store-desc {
+    font-family: "Segoe UI Light";
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -5px;
+    padding: 0px 10px 20px; }
+    @media (max-width: 600px) {
+      .item-store .item-store-desc {
+        font-size: 14px; } }
+  .item-store .item-store-price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #e62425;
+    padding: 0px 10px;
+    margin-top: 10px; }
+    @media (max-width: 600px) {
+      .item-store .item-store-price {
+        font-size: 20px; } }
+  .item-store .item-store-button {
+    background-color: #3b9d7e;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0;
+    background-image: url("../images/cart-w.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+    .item-store .item-store-button:hover {
+      background-color: #2e8066; }

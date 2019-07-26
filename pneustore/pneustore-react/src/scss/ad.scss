@@ -1,0 +1,51 @@
+@import "variables.scss"; 
+
+.ad{
+    width: 100%;
+    height: 250px;
+
+    .primary-offer:hover{
+        cursor: pointer;           
+    }
+
+    .offer-bg-reg{
+        background-color: $pColor;
+    }
+
+    .middle-primary{
+        background-image: url('../images/offer-middle.png');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+    }
+
+    .middle-offer{
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+        margin-top: 26px;
+        height: 250px;
+        padding-top: 10px;
+
+        .middle-offer-text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+        }
+
+        .light-offer-text{
+            font-family: "Segoe UI Light";
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: -5px;
+        }
+
+        .middle-offer-price{
+            font-family: "Segoe UI";
+            font-weight: 900;
+            font-size: 22px;
+            color: white;
+            margin-top: 0px;
+        }
+    }
+}

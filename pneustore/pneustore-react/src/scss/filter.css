@@ -1,0 +1,133 @@
+@keyframes buttonOffer {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 40px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes buttonOfferRight {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 20px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes floatTextLeft {
+  0% {
+    margin-top: 120px; }
+  50% {
+    margin-top: 110px; }
+  100% {
+    margin-top: 120px; } }
+
+@keyframes middleTextLeft {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 40px; } }
+
+@keyframes buttonRadiusBorder {
+  from {
+    border-radius: 5px; }
+  to {
+    border-radius: 20px; } }
+
+@keyframes reaveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes reavealItem {
+  from {
+    position: absolute;
+    left: -200px; }
+  to {
+    left: 0px;
+    position: relative; } }
+
+@keyframes shadowBlink {
+  0% {
+    box-shadow: 1px 1px 15px 1px #989898; }
+  50% {
+    box-shadow: none; }
+  100% {
+    box-shadow: 1px 1px 15px 1px #989898; } }
+
+@keyframes rightAndLeft {
+  0% {
+    right: 10px; }
+  50% {
+    right: 15px; }
+  100% {
+    right: 10px; } }
+
+@keyframes showItemStore {
+  0% {
+    opacity: 0;
+    width: 100%; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1;
+    width: 260px; } }
+
+@keyframes showMobileMenu {
+  0% {
+    height: 0; }
+  100% {
+    height: 100vh; } }
+
+.filter {
+  border-bottom: 2px solid #e0e0e0;
+  padding: 15px 2px;
+  width: 100%; }
+  .filter .title-filter {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px 0px;
+    position: relative; }
+    .filter .title-filter:hover {
+      opacity: 0.6; }
+    .filter .title-filter .open-close {
+      position: absolute;
+      right: 0px;
+      font-size: 28px;
+      top: -10px; }
+  .filter .check-filter {
+    margin: 4px;
+    font-family: "Segoe UI";
+    color: #989898;
+    position: relative; }
+    .filter .check-filter input {
+      -webkit-appearance: none;
+      background-color: white;
+      border: 1px solid #cacece;
+      padding: 8px;
+      display: inline-block;
+      margin-top: 5px;
+      cursor: pointer; }
+      .filter .check-filter input:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1); }
+      .filter .check-filter input:checked {
+        background-color: white;
+        border: 1px solid #adb8c0;
+        color: #99a1a7; }
+      .filter .check-filter input:checked:after {
+        content: '\2714';
+        font-size: 14px;
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        color: black; }
+    .filter .check-filter label {
+      position: absolute;
+      top: 3px;
+      left: 30px;
+      cursor: pointer; }

@@ -1,0 +1,122 @@
+@import "variables.scss";  
+
+.filters{
+    width: 200px;
+    margin: 20px;
+
+    @media(max-width: 600px){
+        .filter-desktop{
+            display: none;
+        }
+
+        .mobile-filters{
+            margin-top: 20px;
+        }
+    }
+
+    .filters-header{
+        border-bottom: 2px solid $greyLine;
+        padding: 20px 0px;
+
+        @media(max-width: 600px){
+            border-bottom: none;
+        }    
+
+        .filters-header-title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 18px;  
+            
+            @media(max-width: 600px){
+                text-align: center;
+                border: 1px solid $greyLine;
+                padding: 15px 10px;
+                margin-bottom: -30px;
+                font-size: 16px;
+            }
+        }
+
+        .title-desktop{
+            @media(max-width: 600px){
+                display: none;
+            }
+        }
+
+        .title-mobile{
+            @media(min-width: 600px){
+                display: none;
+            }
+        }
+
+        .erase-filters{
+            font-family: 'Segoe UI';
+            font-weight: 700;
+            font-size: 14px; 
+            color: white;
+            background-color: $pColor;
+            padding: 8px;
+            margin-top: 20px;
+            position: relative;
+            cursor: pointer;
+
+            @media(max-width: 600px){
+                display: none;
+            }
+
+            &:hover{
+                background-color: $pColorDark; 
+            }
+
+            .x-filters{
+                position: absolute;
+                right: 8px;
+                font-family: 'Segoe UI';
+            }
+        }
+    }
+
+    .cadastre{
+        height: 280px;
+        margin-top: 50px;
+
+        .cadastre-img{
+            width: 80%;
+            margin: 20px;
+            height: 60px;
+            margin-top: 50px;
+        }
+
+        .cadastro-area{
+            width: 80%;
+            margin-top: -120px;
+
+            .cadastro-text{
+                font-size: 14px;
+                display: none;
+            }
+
+            .cadastro-input{
+                width: calc(100% - 15px);
+                padding: 0px;
+                padding-left: 15px;
+            }
+
+            .cadastro-input-area{
+                width: calc(100% - 30px);
+                position: relative;
+                padding: 15px;
+                right: 0;
+                top: 110px;
+                text-align: center;
+                z-index: 9;
+            }
+        }
+    } 
+
+    .ad{
+        @media(max-width: 600px){
+            display: none;         
+        }        
+
+    }
+}

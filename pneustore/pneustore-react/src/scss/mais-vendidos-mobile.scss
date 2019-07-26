@@ -1,0 +1,104 @@
+@import "variables.scss";  
+
+.mais-vendidos-mobile{
+    width: 70%;
+    margin-left: 15%;
+    position: relative;
+    min-height: 620px;
+    margin-bottom: -80px;
+
+    @media(min-width:600px){
+        display: none;
+    }
+
+    .mais-vendidos-title-mobile{
+        letter-spacing: 0px;
+        font-weight: 900;
+        margin: 10px;
+        padding-top: 30px;
+        margin-top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        font-size: 20px;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+
+        @media(max-width: 600px){
+            display: block;         
+        }        
+
+        
+        .mais-vendidos-line-after-mobile{
+            width: calc(30% - 50px);
+            margin-left: 10px;
+            height: 1px;
+            background-color: $greyLine;
+            margin-top: 10px;
+            @media(max-width: 600px){
+                display: none;
+            }
+        }
+
+        .mais-vendidos-title-text-mobile{
+            width: 20%;
+
+            @media(max-width: 600px){
+                width: 100%;
+                text-align: center;
+                margin-left: -15px;
+                font-size: 24px;
+            }
+        }
+
+        .mais-vendidos-abas-mobile{
+            display: flex;
+            justify-content: right;
+            width: 10%;
+            margin-left: calc(100% - 20% - 30% - 10% - 50px);
+
+            @media(max-width: 600px){
+                width: 100%;
+                margin-top: 10px;
+                margin-left: -15px;
+                justify-content: center;
+            }            
+
+            .mais-vendidos-aba-mobile{
+                font-size: 16px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: $pColor;
+                    color: white;
+                }
+            }
+
+            .mais-vendidos-aba-mobile-active{
+                background-color: $pColor;
+                color: white;
+            }
+        }
+    }
+    
+    .items-store{
+        animation: reaveal;
+        animation-duration: 1s;
+        position: relative;
+        overflow: auto;
+
+        .items-store-scroll{
+            display: flex;
+            .item-store{
+                width: 180px;
+    
+                .item-store-photo{
+                    height: 190px;
+                }
+            }
+
+        }      
+    }
+}

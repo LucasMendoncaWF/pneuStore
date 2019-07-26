@@ -1,0 +1,156 @@
+@keyframes buttonOffer {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 40px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes buttonOfferRight {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 20px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes floatTextLeft {
+  0% {
+    margin-top: 120px; }
+  50% {
+    margin-top: 110px; }
+  100% {
+    margin-top: 120px; } }
+
+@keyframes middleTextLeft {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 40px; } }
+
+@keyframes buttonRadiusBorder {
+  from {
+    border-radius: 5px; }
+  to {
+    border-radius: 20px; } }
+
+@keyframes reaveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes reavealItem {
+  from {
+    position: absolute;
+    left: -200px; }
+  to {
+    left: 0px;
+    position: relative; } }
+
+@keyframes shadowBlink {
+  0% {
+    box-shadow: 1px 1px 15px 1px #989898; }
+  50% {
+    box-shadow: none; }
+  100% {
+    box-shadow: 1px 1px 15px 1px #989898; } }
+
+@keyframes rightAndLeft {
+  0% {
+    right: 10px; }
+  50% {
+    right: 15px; }
+  100% {
+    right: 10px; } }
+
+@keyframes showItemStore {
+  0% {
+    opacity: 0;
+    width: 100%; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1;
+    width: 260px; } }
+
+@keyframes showMobileMenu {
+  0% {
+    height: 0; }
+  100% {
+    height: 100vh; } }
+
+.relatos-clients {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  margin-top: 100px; }
+  @media (max-width: 600px) {
+    .relatos-clients {
+      display: none; } }
+  .relatos-clients .relatos-title {
+    letter-spacing: 0px;
+    font-weight: 700;
+    margin: 10px;
+    padding-top: 30px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .relatos-clients .relatos-title .relatos-line-after {
+      width: calc(30% - 50px);
+      margin-left: 50px;
+      height: 1px;
+      background-color: #e0e0e0;
+      margin-top: 10px; }
+    .relatos-clients .relatos-title .relatos-line-before {
+      width: calc(30% - 50px);
+      margin-right: 50px;
+      height: 1px;
+      background-color: #e0e0e0;
+      margin-top: 10px; }
+    .relatos-clients .relatos-title .relatos-title-text {
+      width: 30%; }
+  .relatos-clients .relato-client {
+    width: 270px;
+    padding: 20px;
+    margin: 50px; }
+    .relatos-clients .relato-client .relato-client-picture {
+      width: 250px;
+      height: 250px;
+      background-position: center;
+      border-radius: 50%;
+      background-size: 150%;
+      margin-left: 10px; }
+    .relatos-clients .relato-client .relato-client-name {
+      color: #e62425;
+      letter-spacing: 0px;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 5px; }
+    .relatos-clients .relato-client .relato-client-job {
+      letter-spacing: 0px;
+      font-weight: 100;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: grey; }
+    .relatos-clients .relato-client .relato-client-text {
+      letter-spacing: 0px;
+      font-weight: 100;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: justify;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: grey; }

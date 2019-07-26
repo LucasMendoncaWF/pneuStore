@@ -1,0 +1,97 @@
+@import "variables.scss";  
+
+.relatos-clients{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+
+    @media(max-width: 600px){
+        display: none;
+    }
+
+    .relatos-title{
+        letter-spacing: 0px;
+        font-weight: 700;
+        margin: 10px;
+        padding-top: 30px;
+        margin-top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+        .relatos-line-after{
+            width: calc(30% - 50px);
+            margin-left: 50px;
+            height: 1px;
+            background-color: $greyLine;
+            margin-top: 10px;
+
+        }
+
+        .relatos-line-before{
+            width: calc(30% - 50px);
+            margin-right: 50px;
+            height: 1px;
+            background-color: $greyLine;
+            margin-top: 10px;
+
+        }
+
+        .relatos-title-text{
+            width: 30%;
+        }
+    }
+
+    .relato-client{
+        width: 270px;
+        padding: 20px;
+        margin: 50px;
+
+        .relato-client-picture{
+            width: 250px;
+            height: 250px;
+            background-position: center;
+            border-radius: 50%;
+            background-size: 150%;
+            margin-left: 10px;
+        }
+
+        .relato-client-name{
+            color: $pColor;
+            letter-spacing: 0px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .relato-client-job{
+            letter-spacing: 0px;
+            font-weight: 100;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: $darkGrey;
+        }
+
+        .relato-client-text{
+            letter-spacing: 0px;
+            font-weight: 100;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: $darkGrey;
+        }
+
+    }
+}

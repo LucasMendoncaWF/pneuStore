@@ -1,0 +1,185 @@
+@import "variables.scss";  
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header-pneuapp{
+    height: 50px;
+    width: 100%;
+    padding-top: 15px;
+    background-color: white;
+    border-bottom: 1.5px solid $greyLine;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+
+    @media(max-width: 600px){
+        height: 52px;
+    }
+
+    .mobile-logo{
+        @media(min-width: 600px){
+            display: none;
+        }
+        float: left;
+        width: 140px;
+        margin-left: calc(50% - 80px);
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .mobile-menu-items{
+        position: fixed;
+        background: white;
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        padding-top: 30px;
+        animation: showMobileMenu 0.4s;
+        overflow: hidden;
+
+        @media(min-width: 600px){
+            display: none;
+        }
+
+        .mobile-header-top{
+            margin: 25px 10px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+    }
+
+    .mobile-menu{
+        border-radius: 10px;
+        width: 45px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 38px;
+        padding-top: 7px;
+
+        div {
+            width: 35px;
+            height: 4px;
+            background-color: $grey;
+            margin: 5px 0;
+            margin-left: 4.5px;
+        }
+
+        @media(min-width: 600px){
+            display: none;
+        }
+    }
+
+    .links-header{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 10%;
+
+        @media(max-width: 600px){
+            width: 100%;
+            position: relative;
+            left: 10px;
+            display: none;
+        }
+
+        .link-header{
+            font-size: 15px;
+            color: $grey;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+
+            &:hover{
+                color: $black;
+            }
+        }
+    }
+
+    .client-area{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 10%;
+
+        @media(max-width: 600px){
+            width: 100%;
+            position: relative;
+            left: 0px;
+        }
+
+        .client-link{
+            font-weight: 700;
+            color: $pColor;
+            font-size: 18px;
+            margin: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+
+            &:hover{
+                color: $black;
+            }
+
+            @media(max-width:600px){
+                display: none;
+            }
+        }
+
+        .client-divider{
+            width: 1px;
+            height: 20px;
+            margin-top: 10px;
+            background-color: $greyLine;
+            opacity: 0.7;
+            margin-right: 15px;
+
+            @media(max-width:600px){
+                display: none;
+            }
+        }
+
+        .cliente-area-cart{
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            @media(max-width:600px){
+                position: absolute;
+                right: 15px;
+                top: -35px;
+            }
+
+            &:hover{
+                .cart-ico{
+                    opacity: 0.6;
+                }
+            }
+
+            .cart-ico{
+                width: 35px;
+                height: 35px;
+            }
+            
+            .cart-quantity{
+                margin-top: 2px;
+                margin-left: 5px;
+                background-color: $pColor;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                font-size: 18px;
+                color: white;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+}

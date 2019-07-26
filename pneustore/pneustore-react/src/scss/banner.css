@@ -1,0 +1,241 @@
+@keyframes buttonOffer {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 40px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes buttonOfferRight {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 20px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes floatTextLeft {
+  0% {
+    margin-top: 120px; }
+  50% {
+    margin-top: 110px; }
+  100% {
+    margin-top: 120px; } }
+
+@keyframes middleTextLeft {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 40px; } }
+
+@keyframes buttonRadiusBorder {
+  from {
+    border-radius: 5px; }
+  to {
+    border-radius: 20px; } }
+
+@keyframes reaveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes reavealItem {
+  from {
+    position: absolute;
+    left: -200px; }
+  to {
+    left: 0px;
+    position: relative; } }
+
+@keyframes shadowBlink {
+  0% {
+    box-shadow: 1px 1px 15px 1px #989898; }
+  50% {
+    box-shadow: none; }
+  100% {
+    box-shadow: 1px 1px 15px 1px #989898; } }
+
+@keyframes rightAndLeft {
+  0% {
+    right: 10px; }
+  50% {
+    right: 15px; }
+  100% {
+    right: 10px; } }
+
+@keyframes showItemStore {
+  0% {
+    opacity: 0;
+    width: 100%; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1;
+    width: 260px; } }
+
+@keyframes showMobileMenu {
+  0% {
+    height: 0; }
+  100% {
+    height: 100vh; } }
+
+@media (max-width: 600px) {
+  .banner {
+    display: none; } }
+
+.banner .banner-header {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  height: 50px; }
+  @media (max-width: 600px) {
+    .banner .banner-header {
+      height: 80px; } }
+  .banner .banner-header .alice-carousel__prev-btn [data-area]::after {
+    position: absolute;
+    top: 13px;
+    left: -20px;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/left.png");
+    background-position: -4px -3px;
+    background-size: 100%; }
+  .banner .banner-header .alice-carousel__next-btn [data-area]::after {
+    position: absolute;
+    top: 13px;
+    right: -20px;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/right.png");
+    background-position: -4px -3px;
+    background-size: 100%; }
+  .banner .banner-header .alice-carousel__prev-btn-item:hover, .banner .banner-header .alice-carousel__next-btn-item:hover {
+    opacity: 0.4;
+    transition: 0.3s; }
+  .banner .banner-header .banner-items {
+    width: 30%; }
+    @media (max-width: 600px) {
+      .banner .banner-header .banner-items {
+        width: 50%; } }
+    .banner .banner-header .banner-items .banner-header-item {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      padding-top: 10px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .banner .banner-header .banner-items .banner-header-item .header-item-text {
+        margin-top: 8px; }
+      .banner .banner-header .banner-items .banner-header-item .item-link {
+        margin-left: 20px;
+        color: #989898;
+        border-bottom: 1px solid #989898;
+        font-size: 12px;
+        margin-top: 8px;
+        cursor: pointer; }
+        .banner .banner-header .banner-items .banner-header-item .item-link:hover {
+          color: black;
+          border-bottom: 1px solid black; }
+      .banner .banner-header .banner-items .banner-header-item .header-item-image {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        margin-right: 20px; }
+
+.banner .banner-images {
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; }
+  .banner .banner-images > div {
+    width: 100%; }
+    .banner .banner-images > div .carousel {
+      height: 100%; }
+      .banner .banner-images > div .carousel .carousel-status {
+        display: none; }
+      .banner .banner-images > div .carousel .slider-wrapper.axis-horizontal .slider {
+        height: 540px; }
+      .banner .banner-images > div .carousel .carousel-slider .control-arrow {
+        padding: 40px; }
+      .banner .banner-images > div .carousel .control-dots {
+        padding-left: 0px; }
+  .banner .banner-images .arrow-right-banner, .banner .banner-images .arrow-left-banner {
+    z-index: 99999;
+    position: absolute;
+    top: calc(50% - 20px);
+    cursor: pointer; }
+    .banner .banner-images .arrow-right-banner:hover, .banner .banner-images .arrow-left-banner:hover {
+      opacity: 0.6; }
+  .banner .banner-images .arrow-right-banner {
+    right: 40px; }
+  .banner .banner-images .arrow-left-banner {
+    left: 40px; }
+  .banner .banner-images .banner-item {
+    width: 100%;
+    height: 100%; }
+    .banner .banner-images .banner-item .banner-image {
+      width: 100%; }
+    .banner .banner-images .banner-item .banner-offer {
+      text-align: left;
+      margin: 30px 20px;
+      position: absolute;
+      top: 0;
+      z-index: 99999;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      width: calc(100% - 40px);
+      height: calc(100% - 60px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      display: flex;
+      justify-content: center; }
+      .banner .banner-images .banner-item .banner-offer .offer-text {
+        display: flex; }
+        .banner .banner-images .banner-item .banner-offer .offer-text .offer-percent {
+          font-size: 250px;
+          font-weight: 100;
+          font-family: "Segoe UI"; }
+        .banner .banner-images .banner-item .banner-offer .offer-text .offer-divider {
+          width: 1px;
+          height: 180px;
+          background-color: #e0e0e0;
+          opacity: 0.7;
+          margin: 0px 50px;
+          margin-top: 100px; }
+        .banner .banner-images .banner-item .banner-offer .offer-text .offer-info-off {
+          width: 280px; }
+          .banner .banner-images .banner-item .banner-offer .offer-text .offer-info-off .offer-off {
+            font-size: 120px;
+            font-weight: 100;
+            font-family: "Segoe UI";
+            margin-top: 55px; }
+          .banner .banner-images .banner-item .banner-offer .offer-text .offer-info-off .offer-info {
+            font-weight: 700;
+            margin-bottom: 10px; }
+          .banner .banner-images .banner-item .banner-offer .offer-text .offer-info-off .offer-sub-info {
+            font-size: 14px;
+            opacity: 0.8; }
+      .banner .banner-images .banner-item .banner-offer .offer-button {
+        background-color: #e62425;
+        padding: 20px;
+        width: 150px;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+        left: calc(50% - 75px);
+        position: absolute;
+        bottom: 50px; }
+        .banner .banner-images .banner-item .banner-offer .offer-button:hover {
+          background-color: #bf2223; }

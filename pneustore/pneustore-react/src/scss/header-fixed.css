@@ -1,0 +1,221 @@
+@keyframes buttonOffer {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 40px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes buttonOfferRight {
+  0% {
+    margin-top: 30px; }
+  50% {
+    margin-top: 20px; }
+  100% {
+    margin-top: 30px; } }
+
+@keyframes floatTextLeft {
+  0% {
+    margin-top: 120px; }
+  50% {
+    margin-top: 110px; }
+  100% {
+    margin-top: 120px; } }
+
+@keyframes middleTextLeft {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 40px; } }
+
+@keyframes buttonRadiusBorder {
+  from {
+    border-radius: 5px; }
+  to {
+    border-radius: 20px; } }
+
+@keyframes reaveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes reavealItem {
+  from {
+    position: absolute;
+    left: -200px; }
+  to {
+    left: 0px;
+    position: relative; } }
+
+@keyframes shadowBlink {
+  0% {
+    box-shadow: 1px 1px 15px 1px #989898; }
+  50% {
+    box-shadow: none; }
+  100% {
+    box-shadow: 1px 1px 15px 1px #989898; } }
+
+@keyframes rightAndLeft {
+  0% {
+    right: 10px; }
+  50% {
+    right: 15px; }
+  100% {
+    right: 10px; } }
+
+@keyframes showItemStore {
+  0% {
+    opacity: 0;
+    width: 100%; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1;
+    width: 260px; } }
+
+@keyframes showMobileMenu {
+  0% {
+    height: 0; }
+  100% {
+    height: 100vh; } }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.header-pneuapp {
+  height: 50px;
+  width: 100%;
+  padding-top: 15px;
+  background-color: white;
+  border-bottom: 1.5px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  z-index: 99999; }
+  @media (max-width: 600px) {
+    .header-pneuapp {
+      height: 52px; } }
+  .header-pneuapp .mobile-logo {
+    float: left;
+    width: 140px;
+    margin-left: calc(50% - 80px); }
+    @media (min-width: 600px) {
+      .header-pneuapp .mobile-logo {
+        display: none; } }
+    .header-pneuapp .mobile-logo img {
+      width: 100%; }
+  .header-pneuapp .mobile-menu-items {
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    animation: showMobileMenu 0.4s;
+    overflow: hidden; }
+    @media (min-width: 600px) {
+      .header-pneuapp .mobile-menu-items {
+        display: none; } }
+    .header-pneuapp .mobile-menu-items .mobile-header-top {
+      margin: 25px 10px;
+      letter-spacing: 0px;
+      font-weight: 700;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer; }
+  .header-pneuapp .mobile-menu {
+    border-radius: 10px;
+    width: 45px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 38px;
+    padding-top: 7px; }
+    .header-pneuapp .mobile-menu div {
+      width: 35px;
+      height: 4px;
+      background-color: #989898;
+      margin: 5px 0;
+      margin-left: 4.5px; }
+    @media (min-width: 600px) {
+      .header-pneuapp .mobile-menu {
+        display: none; } }
+  .header-pneuapp .links-header {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 10%; }
+    @media (max-width: 600px) {
+      .header-pneuapp .links-header {
+        width: 100%;
+        position: relative;
+        left: 10px;
+        display: none; } }
+    .header-pneuapp .links-header .link-header {
+      font-size: 15px;
+      color: #989898;
+      margin: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer; }
+      .header-pneuapp .links-header .link-header:hover {
+        color: black; }
+  .header-pneuapp .client-area {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 10%; }
+    @media (max-width: 600px) {
+      .header-pneuapp .client-area {
+        width: 100%;
+        position: relative;
+        left: 0px; } }
+    .header-pneuapp .client-area .client-link {
+      font-weight: 700;
+      color: #e62425;
+      font-size: 18px;
+      margin: 10px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer; }
+      .header-pneuapp .client-area .client-link:hover {
+        color: black; }
+      @media (max-width: 600px) {
+        .header-pneuapp .client-area .client-link {
+          display: none; } }
+    .header-pneuapp .client-area .client-divider {
+      width: 1px;
+      height: 20px;
+      margin-top: 10px;
+      background-color: #e0e0e0;
+      opacity: 0.7;
+      margin-right: 15px; }
+      @media (max-width: 600px) {
+        .header-pneuapp .client-area .client-divider {
+          display: none; } }
+    .header-pneuapp .client-area .cliente-area-cart {
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer; }
+      @media (max-width: 600px) {
+        .header-pneuapp .client-area .cliente-area-cart {
+          position: absolute;
+          right: 15px;
+          top: -35px; } }
+      .header-pneuapp .client-area .cliente-area-cart:hover .cart-ico {
+        opacity: 0.6; }
+      .header-pneuapp .client-area .cliente-area-cart .cart-ico {
+        width: 35px;
+        height: 35px; }
+      .header-pneuapp .client-area .cliente-area-cart .cart-quantity {
+        margin-top: 2px;
+        margin-left: 5px;
+        background-color: #e62425;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: white;
+        padding: 5px;
+        text-align: center; }
